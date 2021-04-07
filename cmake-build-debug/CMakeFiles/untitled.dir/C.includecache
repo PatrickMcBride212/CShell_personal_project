@@ -1,0 +1,18 @@
+#IncludeRegexLine: ^[ 	]*[#%][ 	]*(include|import)[ 	]*[<"]([^">]+)([">])
+
+#IncludeRegexScan: ^.*$
+
+#IncludeRegexComplain: ^$
+
+#IncludeRegexTransform: 
+
+C:/Users/mcbri/CLionProjects/CShell/getline.c
+stdio.h
+-
+stdlib.h
+-
+vcruntime_string.h
+-
+string.h
+-
+

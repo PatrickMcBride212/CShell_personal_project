@@ -1,0 +1,20 @@
+#IncludeRegexLine: ^[ 	]*[#%][ 	]*(include|import)[ 	]*[<"]([^">]+)([">])
+
+#IncludeRegexScan: ^.*$
+
+#IncludeRegexComplain: ^$
+
+#IncludeRegexTransform: 
+
+C:/Users/mcbri/CLionProjects/CShell/input_and_parsing.h
+
+C:/Users/mcbri/CLionProjects/CShell/main.c
+stdio.h
+-
+string.h
+-
+stdlib.h
+-
+input_and_parsing.h
+C:/Users/mcbri/CLionProjects/CShell/input_and_parsing.h
+

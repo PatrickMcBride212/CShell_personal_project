@@ -7,15 +7,16 @@
 #include <vcruntime_string.h>
 #include <string.h>
 
+
 char * getline() {
-    int bufferSize = 1000;
-    char *currentLine = malloc(sizeof(char) * bufferSize);
+    char * currentLine = malloc(sizeof(char*) * 500);
     if (!currentLine) {
-        fprintf(stderr, "getline: initial line allocation error\n");
+        fprintf(stderr, "Initial line allocation error: in getline\n");
         exit(EXIT_FAILURE);
     }
-    if (NULL == fgets(currentLine, bufferSize, stdin)) {
+    if (NULL == fgets(currentLine, 500, stdin)) {
         exit(EXIT_SUCCESS);
     }
+    currentLine[strcspn(currentLine, "\n")] = 0;
     return currentLine;
 }
